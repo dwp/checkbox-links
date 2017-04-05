@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">This is the title
+        <span class="heading-secondary">
+          Complete by 14 June 2017
+        </span>
+      </h1>
+
+      <p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <form>
+
+        <h2 class="heading-medium" id="checklist">Task list</h2>
+
+        <fieldset>
+
+          <legend class="visually-hidden">Task list for this is the title</legend>
+
+          <div class="multiple-choice">
+            <input id="task-1" name="task-1" type="checkbox" value="task-1">
+            <label for="task-1">Task one, this might have an <a href="http://google.com">inline link to another website</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="task-2" name="task-2" type="checkbox" value="task-2">
+            <label for="task-2">This is another task. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </label>
+          </div>
+          <div class="multiple-choice">
+            <input id="task-3" name="task-3" type="checkbox" value="task-3">
+            <label for="task-3">This is another task. This might have an <a href="http://bbc.co.uk">inline link</a> and an <a href="mailto:test@test.com">email address</a> lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </label>
+          </div>
+
+        </fieldset>
+
+        <h2 class="heading-medium" id="checklist">Status updates</h2>
+
+        <div class="comment-group">
+
+          <div class="form-group">
+            
+            <label class="form-label" for="issueMessage">Add comment
+              <span class="form-hint">
+              Don&rsquo;t include sensitive information like the personal details of claimants or&nbsp;staff.
+              </span>
+            </label>
+            <textarea class="form-control full-width" id="issueMessage" name="comment" cols="30" rows="3"></textarea>
+
+          </div>{# /form-group #}
+
+          <div class="form-group">
+
+            <div class="multiple-choice">
+              <input id="blocker" name="blocker" type="checkbox" value="blocker">
+              <label for="blocker">Blocker &ndash; something is stopping us completing this</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="risk" name="risk" type="checkbox" value="risk">
+              <label for="risk">Risk &ndash; tasks unlikely to be done before 14 June</label>
+            </div>
+
+          </div>{# /form-group #}
+
+        </div>{# /comment-group #}
+
+        <div class="form-group">
+          <input type="submit" class="button" name="save" value="Save and continue"/>
+        </div>
+
+    </div>{# /column-one-third #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}
+
+
